@@ -17,6 +17,12 @@ body{
     border-bottom:solid black 1px ;
     gap: 10px;
     align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    
     
 }
 .navbar__s1__title{
@@ -34,10 +40,35 @@ body{
     border: none;
     width: 100%;
     font-size: 16px;
+    background-color:transparent;
 }
 .navbar__s2 input:focus{
     outline: none;
 }
+.my-learnig{
+    position: relative;
+    cursor: pointer;
+    
+    
+}
+
+
+.my-learnig__popup{
+    border: solid black 1px;
+    background-color: white;
+    position: absolute;
+    width: 100px;
+    top: 150%;
+    right: 0;
+    padding: 10px;
+    display: none;
+
+}
+.my-learnig:hover .my-learnig__popup{
+    display: block;
+}
+ 
+
 .navbar__s3{
     display: flex;
     justify-content: space-around;
@@ -55,9 +86,23 @@ body{
     padding: 10px;
     border-radius: 30px;
 }
+.sales-img{
+    position: relative;
+}
 .sales-img img{
     width: 100%;
 }
+.sales-img__popup{
+    width: 25%;
+    background-color:white;
+    border: solid black 1px;
+    padding: 10px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+}
+
 .Recommended{
     padding: 10px;
     
